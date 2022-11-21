@@ -105,7 +105,8 @@ A sample payload :
 
  MySQL database constitutes all the payment details and a snapshot of the PAYMENTS table :
  
- <img width="700" alt="Screen Shot 2022-11-18 at 7 41 02 PM" src="https://user-images.githubusercontent.com/54916661/202826442-30d10ec5-3315-4c66-b2e7-0b158c5c0ad0.png">
+ <img width="1217" alt="Screen Shot 2022-11-21 at 1 49 19 AM" src="https://user-images.githubusercontent.com/54916661/203101906-cde23f24-de69-4571-8cd0-16e1f6565f7c.png">
+
        
 ## Next Steps: 
 
