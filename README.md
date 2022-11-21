@@ -3,7 +3,7 @@
 # A Peer to Peer Distributed Payment System 
 
 
-### Introduction
+## Introduction
 
 A peer to peer distributed payment system that can be integrated to one of the Intuit products.
 
@@ -15,7 +15,7 @@ Risk Service: Consume message from RabbitMQ queue and perform risk analysis on t
 
 Mysql: A Relational database which holds users and payments data.
 
-### [Directory Structure](#Directory Structure)
+## [Directory Structure](#Directory Structure)
      payment_service : A Python based microservices
      risk_service    : A Python based microservices
      mysql           : A MySQL schema and test data
@@ -37,7 +37,7 @@ To install Docker, go to Docker official page (https://docs.docker.com/engine/in
 
 To run the project on your machine, please follow the steps mentioned below:
 
-### Setup:
+## Setup:
 Step-1. Open terminal. 
 
 Step-2. Clone the repository by using the below command in the terminal
@@ -65,7 +65,7 @@ Step-8. Now the micro-services are up and running, launch Postman to Test Servic
 Note: Please refer to port details in docker-compose.yml file and make sure used ports are available. 
 
 
-### Design Decisions:
+## Design Decisions:
 
      Create Payment:
           1. Assuming paymentMethodId exist for the user. 
@@ -80,7 +80,7 @@ Note: Please refer to port details in docker-compose.yml file and make sure used
           1. A user can search a payee with first name and last name. 
           2. There can be multiple customers with same first name and last name. Service will return a list. Email id in the respponse can be used to select the unique payee.
 
-### Test Services:
+## Test Services:
 
 1. Make a New Payment
 Use the endpoint ```POST - http://localhost:5000/v1/payments``` to process new payment. 
@@ -106,7 +106,7 @@ A sample payload :
  
  <img width="700" alt="Screen Shot 2022-11-18 at 7 41 02 PM" src="https://user-images.githubusercontent.com/54916661/202826442-30d10ec5-3315-4c66-b2e7-0b158c5c0ad0.png">
        
-### Next Steps: 
+## Next Steps: 
 
 1) Design Front-End component to initiate peer to peer payment through mobile/web based UI.
 2) Add Authentication for the API's currently exposed.
@@ -115,7 +115,7 @@ A sample payload :
 5) Use a Machine learning model to generate risk score for each transaction.
 
 
-### Design & Development Standards:
+## Design & Development Standards:
 - Coding styles, coding standards were followed throughout the project development. All the modules, classes and functions are inline documented.
 
 - Test cases and development  
@@ -123,7 +123,7 @@ A sample payload :
      2. Multiple Testcases were added to validate different functions that were written during code development with usecases.
 - Technical documentation is shared providing all the required information about each python module.   
 
-### Test Suite:
+## Test Suite:
 
    To run the test_suite of payment-service, navigate to payment-service folder and run : 
 
