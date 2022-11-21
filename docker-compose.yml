@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  
+  rabbitmq:
+    image: 'rabbitmq:3.6-management-alpine'
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+
+  mysql:
+    build: ./mysql/
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+
+  risk_service:
+    build: risk_service
+    volumes:
+      - ./risk_service:/risk_service
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  payment_service:
+    build: payment_service
+    volumes:
+      - ./payment_service:/payment_service
+    ports:
+      - 5000:5000
+    environment:
+      - PYTHONUNBUFFERED=1

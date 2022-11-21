@@ -1,0 +1,1 @@
+CURRENCY_TYPES = ["INR", "USD", "ILS", "GBS"]
