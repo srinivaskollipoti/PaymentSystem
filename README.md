@@ -15,7 +15,7 @@ Risk Service: Consume message from RabbitMQ queue and perform risk analysis on t
 
 Mysql: A Relational database which holds users and payments data.
 
-## [Directory Structure](#Directory Structure)
+## Directory Structure
      payment_service : A Python based microservices
      risk_service    : A Python based microservices
      mysql           : A MySQL schema and test data
