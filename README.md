@@ -39,31 +39,31 @@ To run the project on your machine, please follow the steps mentioned below:
 
 ## Setup:
 
-     Step-1. Open terminal. 
+Step-1. Open terminal. 
 
-     Step-2. Clone the repository by using the below command in the terminal
+Step-2. Clone the repository by using the below command in the terminal
 
-     ```git clone https://github.com/srinivaskollipoti/payements/edit/srini/payments.git``` 
+```git clone https://github.com/srinivaskollipoti/payements/edit/srini/payments.git``` 
 
-     Step-3. Open the terminal and run the following command
+Step-3. Open the terminal and run the following command
 
-     ```docker --version``` . This command should result in docker version verifying successful installation of docker.
+```docker --version``` . This command should result in docker version verifying successful installation of docker.
 
-     NOTE: In mac docker compose is installed with docker, but you may need to install it separately for other operating systems. Please refer: https://docs.docker.com/compose/install/
+NOTE: In mac docker compose is installed with docker, but you may need to install it separately for other operating systems. Please refer: https://docs.docker.com/compose/install/
 
-     Step-4. Run the following command from the project home directory ```docker-compose build``` (This might take a while to build the images locally.) 
+Step-4. Run the following command from the project home directory ```docker-compose build``` (This might take a while to build the images locally.) 
 
-     NOTE: There are variations to docker compose command. If ```docker-compose build``` does not work for you, try ```docker compose build```.
+NOTE: There are variations to docker compose command. If ```docker-compose build``` does not work for you, try ```docker compose build```.
 
-     Step-5. Verify successful docker image build using command ```docker images``` . (This command will list images)
+Step-5. Verify successful docker image build using command ```docker images``` . (This command will list images)
 
-     Step-6. Run ```docker-compose up -d``` to run the containers (i.e our micro-services).
+Step-6. Run ```docker-compose up -d``` to run the containers (i.e our micro-services).
 
-     Step-7. Run ```docker ps``` to list the containers of the application. ( i.e payment_service, risk_service, rabbitmq, mysql).
+Step-7. Run ```docker ps``` to list the containers of the application. ( i.e payment_service, risk_service, rabbitmq, mysql).
 
-     Step-8. Now the micro-services are up and running, launch Postman to Test Services. 
+Step-8. Now the micro-services are up and running, launch Postman to Test Services. 
 
-     Note: Please refer to port details in docker-compose.yml file and make sure used ports are available. 
+Note: Please refer to port details in docker-compose.yml file and make sure used ports are available. 
 
 
 ## Design Decisions:
