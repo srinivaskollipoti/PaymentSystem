@@ -43,7 +43,7 @@ Step-1. Open terminal.
 
 Step-2. Clone the repository by using the below command in the terminal
 
-```git clone https://github.com/srinivaskollipoti/payements/edit/srini/payments.git``` 
+```git clone https://github.com/srinivaskollipoti/Intuit-Payment-System.git``` 
 
 Step-3. Open the terminal and run the following command
 
