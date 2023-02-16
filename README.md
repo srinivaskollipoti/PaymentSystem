@@ -1,4 +1,4 @@
-# Intuit-Payment-System
+# Payment-System
 
 # A Peer to Peer Distributed Payment System 
 
